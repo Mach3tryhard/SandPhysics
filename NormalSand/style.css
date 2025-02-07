@@ -1,0 +1,4 @@
+html, body {
+  touch-action: manipulation; /* Disables double-tap zoom */
+  overflow: hidden; /* Optional: Prevents scrolling */
+}

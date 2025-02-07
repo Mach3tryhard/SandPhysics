@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>Document Title</title>
+    <style>
+        body { margin: 0; overflow: hidden; } /* Remove body margins and hide scrollbars */
+        canvas { display: block; } /* Make canvas a block element */
+      </style>
+</head>
+<body style="background-color: 	#010b19;">
+    <canvas id="myCanvas"></canvas>
+
+    <script src="code1.js"></script>
+    <style src="style.css"></style>
+    <script>
+        ///REMOVE ZOOMING AND SCROLLING
+        document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey || e.metaKey) {
+            if (e.key === '+' || e.key === '-' || e.key === '0') {
+            e.preventDefault();
+            }
+        }
+        });
+        document.addEventListener('wheel', (e) => {
+        if (e.ctrlKey) {
+            e.preventDefault();
+        }
+        }, { passive: false });
+    </script>
+</body>
+</html>
