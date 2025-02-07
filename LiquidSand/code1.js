@@ -91,8 +91,8 @@ function ApplyForces(){
     //USER FORCE
     for(var i=0;i<nb;i++){
         if(isMouseDown==true){
-            grainA[i].acc.y=(userposy - grainA[i].pos.y)/caca;
-            grainA[i].acc.x=(userposx - grainA[i].pos.x)/caca;
+            grainA[i].acc.y=(userposy - grainA[i].pos.y)/300;
+            grainA[i].acc.x=(userposx - grainA[i].pos.x)/500;
         }
         else{
             grainA[i].acc.y=0;
